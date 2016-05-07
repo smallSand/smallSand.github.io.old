@@ -25,8 +25,7 @@ layout: compress
             </div>
         </div>
         {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->{% endif %}
-        <!-- /#uyan_thread -->
-        <div id="uyan_frame" class="animated fadeInUp"></div><!-- /#uyan_thread -->
+        {% if page.comments and site.uyan == true %}<section id="uyan_frame" class="animated fadeInUp"></section><!-- /#uyan_thread -->{% endif %}
     </header>
     {% include scripts.html %}
     {% if site.mathjax == true %}
