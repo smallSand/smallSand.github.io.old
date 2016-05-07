@@ -3,10 +3,10 @@
 		<ul class="dl-menu">
 			<li><a href="{{ site.url }}/">Home</a></li>
 			<li>
-				<a href="#">About</a>
+				<a href="#">关于</a>
 				<ul class="dl-submenu">
 					<li>
-						<img src="{{ site.url }}/{{ site.logo }}" alt="{{ site.title }} photo" class="author-photo">
+						<img src="{{ site.logo }}" alt="{{ site.title }} photo" class="author-photo">
 						<h4>{{ site.title }}</h4>
 						<p>{{ site.description }}</p>
 					</li>
@@ -63,7 +63,7 @@
                         <a href="http://soundcloud.com/{{ site.soundcloud }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-soundcloud"></i> SoundCloud</a>
                     </li>{% endif %}
                     {% if site.weibo %}<li>
-                        <a href="http://www.weibo.com/{{ site.weibo }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-weibo"></i> Weibo</a>
+                        <a href="http://www.weibo.com/{{ site.weibo }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-weibo"></i> weibo</a>
                     </li>{% endif %}
                     {% if site.flickr %}<li>
                         <a href="http://www.flickr.com/{{ site.flickr }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-flickr"></i> Flickr</a>
@@ -80,10 +80,10 @@
 				</ul><!-- /.dl-submenu -->
 			</li>
 			<li>
-				<a href="#">Posts</a>
+				<a href="#">文章</a>
 				<ul class="dl-submenu">
-					<li><a href="{{ site.url }}/posts/">All Posts</a></li>
-					<li><a href="{{ site.url }}/tags/">All Tags</a></li>
+					<li><a href="{{ site.url }}/posts/">文章</a></li>
+					<li><a href="{{ site.url }}/tags/">标签</a></li>
 				</ul>
 			</li>
 			{% for link in site.data.navigation %}
