@@ -30,7 +30,7 @@ uyan:     true
 
 # Social
 # if you don't have any of social below, comment the line.
-google_analytics: UA-78254230-1
+google_analytics: UA-78254230-1 
 #google:
   #plus:            #username
   #analytics:
