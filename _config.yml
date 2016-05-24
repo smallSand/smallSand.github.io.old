@@ -1,7 +1,8 @@
 # Site
 title:              smallSand
 bio:                '我的个人博客'
-description:        "我是刘松林,江汉大学2012级毕业生,就读于物理信息工程学院,目前在武汉从事软件开发工作"
+description:        "我是smallsand,江汉大学2012级毕业生,就读于物理信息工程学院,目前在武汉从事软件开发工作，这是我的个人博客"
+keywords   ：               smallsand,个人博客,江汉大学,2012级毕业生,Moon
 reading_time:       true
 words_per_minute:   200
 logo:               http://o6n610sp1.bkt.clouddn.com/logo.png
