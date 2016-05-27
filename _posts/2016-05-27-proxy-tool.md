@@ -14,13 +14,13 @@ comments: true
 > XX-net
 
 废话不多说，直接上地址：
-https://github.com/XX-net/XX-Net
+[戳这里](https://github.com/XX-net/XX-Net)
 配置比较复杂，但是对于想弄清楚翻墙原因的童鞋可以亲自尝试配置一下，具有一定挑战性
 
 
 > Lantern
 
-https://github.com/getlantern/lantern/tree/latest
+[戳这里](https://github.com/getlantern/lantern/tree/latest)
 
 配置简单，安装完就可以用了，我会说我现在就在用么
 
