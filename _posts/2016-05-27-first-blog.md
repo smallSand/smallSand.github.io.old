@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Firt blog"
+title:  "祝贺自己答辩顺利结束了"
 date:   2016-05-26
 excerpt: "我的第一篇博客"
 tag:
