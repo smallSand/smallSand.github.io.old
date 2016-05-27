@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Markdown Syntax"
+title:  "Markdown 语法"
 date:   2016-03-15
-excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+excerpt: "Markdown一些常用的语法介绍，写博客可以参考"
 tag:
 - markdown 
-- syntax
+- 语法
 - sample
-- test
+- 测试
 - jekyll
 comments: true
 ---
@@ -16,21 +16,21 @@ comments: true
 
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
 
-# Heading 1
+# 我是一级标题
 
-## Heading 2
+## 我是二级标题
 
-### Heading 3
+### 我是三级标题
 
-#### Heading 4
+#### 我是四级标题
 
-##### Heading 5
+##### 我是五级标题
 
-###### Heading 6
+###### 我是六级标题
 
-### Body text
+### 正文
 
-Lorem ipsum dolor sit amet, test link adipiscing elit. **This is strong**. Nullam dignissim convallis est. Quisque aliquam.
+Lorem ipsum dolor sit amet, test link adipiscing elit. **黑体**. Nullam dignissim convallis est. Quisque aliquam.
 
 ![Smithsonian Image](https://mmistakes.github.io/minimal-mistakes/images/3953273590_704e3899d5_m.jpg)
 {: .image-right}
@@ -39,13 +39,13 @@ Lorem ipsum dolor sit amet, test link adipiscing elit. **This is strong**. Nulla
 
 HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.
 
-### Blockquotes
+### 引用快
 
 > Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
 
-## List Types
+## 列表
 
-### Ordered Lists
+### 有序列表
 
 1. Item one
    1. sub item one
@@ -53,13 +53,13 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
    3. sub item three
 2. Item two
 
-### Unordered Lists
+### 无序列表
 
 * Item one
 * Item two
 * Item three
 
-## Tables
+## 表格
 
 | Header1 | Header2 | Header3 |
 |:--------|:-------:|--------:|
@@ -72,7 +72,7 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 | Foot1   | Foot2   | Foot3
 {: rules="groups"}
 
-## Code Snippets
+## 代码高亮
 
 {% highlight css %}
 #container {
@@ -82,7 +82,7 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 }
 {% endhighlight %}
 
-## Buttons
+## 按钮
 
 Make any link standout more when applying the `.btn` class.
 
@@ -96,7 +96,7 @@ Make any link standout more when applying the `.btn` class.
 <div markdown="0"><a href="#" class="btn btn-danger">Danger Button</a></div>
 <div markdown="0"><a href="#" class="btn btn-info">Info Button</a></div>
 
-## KBD
+## 键盘按键
 
 You can also use `<kbd>` tag for keyboard buttons.
 
@@ -106,7 +106,7 @@ You can also use `<kbd>` tag for keyboard buttons.
 
 Press <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> to move your car. **Midtown Maddness!!**
 
-## Notices
+## 提示
 
 **Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
 {: .notice}
