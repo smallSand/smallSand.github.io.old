@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "A Post with a Video"
+title:  "一篇带有视频的文章"
 date:   2016-03-15
-excerpt: "Custom written post descriptions are the way to go... if you're not lazy."
+excerpt: "经常写文章描述可以让你不再懒惰..."
 tag:
 - sample
 - post

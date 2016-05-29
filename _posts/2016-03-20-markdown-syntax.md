@@ -6,13 +6,12 @@ excerpt: "Markdown一些常用的语法介绍，写博客可以参考"
 tag:
 - markdown 
 - 语法
-- sample
 - 测试
 - jekyll
 comments: true
 ---
 
-## HTML Elements
+## HTML 标签
 
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
 

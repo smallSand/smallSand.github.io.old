@@ -1,28 +1,26 @@
-# Moon Jekyll Theme
+# 我的个人博客
     
-######(If you like this theme or using it, please give a :star: for motivation.)
+######(如果你喜欢，可以看看下面原始的主题模版)
 
-**[Moon](http://taylantatli.github.io/Moon)** is a minimal, one column jekyll theme.
+ 博客主题来自**[Moon](http://taylantatli.github.io/Moon)**.
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+## 目的
 
-## Preview
+* 记录下生活中的点点滴滴
+* 记录下学习的过程
+* 分享技术
+* 寻找志同道合的朋友
 
-![screenshot of Moon](https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png)    
-![screenshot of Moon](https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png)
+## 预览
 
-See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
+![screenshot of Moon]
+(http://o6n610sp1.bkt.clouddn.com/61ac6c8e-01d6-11e6-879f-8308883de790.png)    
+![screenshot of Moon]
+(http://o6n610sp1.bkt.clouddn.com/61ac6c8e-01d6-11e6-879f-8308883de790.png)
+
+主题版本 [live version of Moon](http://taylantatli.github.io/Moon) .
 
 ## Getting Started
 
-To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
+来这里看看[Setup Guide](http://taylantatli.me/Moon/moon-theme/)可以学习如何搭建Moon主题的博客.
+或者直接联系我 :[My Email](lsl1107050213@hotmail.com).

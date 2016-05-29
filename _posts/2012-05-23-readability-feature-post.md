@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Post with Image Feature"
-date: 2012-05-23
-excerpt: "A ton of text to test readability with image feature."
-tags: [sample post, readability, test, image, feature]
-feature: http://i.imgur.com/Ds6S7lJ.png
+title: "一篇包含图片特辑的文章"
+date: 2015-05-23
+excerpt: "image feature？图片特辑？"
+tags: [测试, 图片,图片标题]
+feature: http://o6n610sp1.bkt.clouddn.com/f.jpg
 comments: true
 ---
 
