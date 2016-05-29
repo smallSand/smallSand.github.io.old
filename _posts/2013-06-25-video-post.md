@@ -10,7 +10,7 @@ tag:
 comments: true
 ---
 
-<iframe height="498" width="800" src="http://player.youku.com/embed/XMTI2MDI2ODQ4NA==" frameborder="0" ></iframe>
+<iframe height="498" width="730" src="http://player.youku.com/embed/XMTI2MDI2ODQ4NA==" frameborder="0" ></iframe>
 
 Video embeds are responsive and scale with the width of the main content block with the help of [FitVids](http://fitvidsjs.com/).
 
