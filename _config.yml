@@ -9,14 +9,15 @@ description: >
 email: 1107050213@qq.com
 author: 松林
 avatar: "http://o6n610sp1.bkt.clouddn.com/avatar.jpg"
-profile: One sentence introducing yourself.
+profile: 记录生活，分享技术，提升自我
 #twitter_username: twitter_username
-#github_username:  smallSand
+github_username:  smallSand
+weibo:  kznlsl
 
 # Comment Service (Disqus or 多说)
 #  choose one and un-comment the line to active it
 #disqus_shortname: xxx   # get one: https://disqus.com/admin/signup/
-#duoshuo_shortname: samllsand  # get one: http://duoshuo.com/create-site/
+duoshuo_shortname: samllsand  # get one: http://duoshuo.com/create-site/
 
 permalink: /archivers/:title
 gems:
