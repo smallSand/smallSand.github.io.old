@@ -2,14 +2,13 @@
 title: 松林的个人空间
 baseurl: "http://smallSand.github.io"
 #timezone: Asia/Chongqing
-description: >
-  记录生活，分享技术，提升自我
+description: 记录生活，分享技术，提升自我
 
 # Your information
 email: 1107050213@qq.com
 author: 松林
 avatar: "http://o6n610sp1.bkt.clouddn.com/avatar.jpg"
-profile: 会Java,能写SQL,看得懂HTML/JS/CSS,爱折腾，致力于成为全栈开发者
+profile:   记录生活，分享技术，提升自我
 #twitter_username: twitter_username
 github_username:  smallSand
 weibo:  kznlsl

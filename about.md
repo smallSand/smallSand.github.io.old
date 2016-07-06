@@ -5,9 +5,10 @@ permalink: /about/
 public: true
 ---
 
-#刘松林
 
-万一被看上了呢
+# 刘松林
+
+会Java,能写SQL,看得懂HTML/JS/CSS,爱折腾，致力于成为全栈开发者,万一被看上了呢~
 
 > 个人信息
 
