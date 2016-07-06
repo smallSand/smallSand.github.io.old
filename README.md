@@ -1,34 +1,55 @@
-基于jekyll博客应用主题
-===
+# jekyll-theme-EasyBook
 
-pithy是一款适用于jekyll的博客应用主题，基于bootstrap前端框架开发。本着简约的视觉效果设计，目的是希望博客的浏览者能够更多的看到博客内容。
+Another Jekyll Blog Theme "EasyBook"
 
-使用说明
-===
+Start blogging with a simple but powerful theme.
 
-本主题是自由，免费，开源的，你可以克隆为新的仓库作为自己的博客。当然，在克隆仓库时为本主题加颗星，保留power by pithy，那将是对我最大的支持和鼓励。
+## Features
 
-主题效果
-===
-- 首页
--
-![首页](http://7xlgu7.com1.z0.glb.clouddn.com/pithy-index.jpg)
+- Everything Basic Jekyll has.
+- **Pagination** is enabled.
+- **Comments** using Disqus or 多说.
+- **TOC** makes reading easier.
+- **Profile** including your links and avatar on the sidebar.
+- *And more...*
 
-- 列表
--
-![列表](http://7xlgu7.com1.z0.glb.clouddn.com/pithy-list.jpg)
+## Install
 
-- 文章
--
-![文章](http://7xlgu7.com1.z0.glb.clouddn.com/pithy-post.jpg)
+Read [Quick Guide] to learn how to install and publish.
 
-反馈
-===
+Read [Welcome to Jekyll and EasyBook][helloPost] and [Jekyll][jekyll] for further information.
 
-在你浏览或使用本主题时，发现问题或者是有好的建议，希望能够在这里给予反馈。
+**If need help, please:**
 
-[New Issue](https://github.com/guovz/pithy/issues/new)
+ - [**Read Wiki pages**](https://github.com/laobubu/jekyll-theme-EasyBook/wiki)
+ - **Google it**
+ - [**Submit an issue**](https://github.com/laobubu/jekyll-theme-EasyBook/issues/new)
 
-License
-===
-[MIT License](https://github.com/guovz/pithy/blob/gh-pages/LICENSE.md)
+## Donate
+
+Buy me a coffee if you find EasyBook useful for you :smiley:
+
+Visit <http://laobubu.net/donate.html>
+
+## Demo
+
+[laobubu's blog](http://blog.laobubu.net) | [empty site](http://laobubu.github.io/jekyll-theme-EasyBook)
+
+![Homepage](https://ooo.0o0.ooo/2016/02/11/56bc997c65daf.png)
+
+## License
+
+```
+The MIT License (MIT)
+Copyright (c) 2016 laobubu
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
+
+[Quick Guide]: https://github.com/laobubu/jekyll-theme-EasyBook/wiki/Quick-Guide
+[helloPost]: http://laobubu.github.io/jekyll-theme-EasyBook/archivers/hello
+[jekyll]: http://jekyllrb.com/
