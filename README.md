@@ -1,26 +1,34 @@
-# 我的个人博客
-    
-######(如果你喜欢，可以看看下面原始的主题模版)
+基于jekyll博客应用主题
+===
 
- 博客主题来自**[Moon](http://taylantatli.github.io/Moon)**.
+pithy是一款适用于jekyll的博客应用主题，基于bootstrap前端框架开发。本着简约的视觉效果设计，目的是希望博客的浏览者能够更多的看到博客内容。
 
-## 目的
+使用说明
+===
 
-* 记录下生活中的点点滴滴
-* 记录下学习的过程
-* 分享技术
-* 寻找志同道合的朋友
+本主题是自由，免费，开源的，你可以克隆为新的仓库作为自己的博客。当然，在克隆仓库时为本主题加颗星，保留power by pithy，那将是对我最大的支持和鼓励。
 
-## 预览
+主题效果
+===
+- 首页
+-
+![首页](http://7xlgu7.com1.z0.glb.clouddn.com/pithy-index.jpg)
 
-![screenshot of Moon]
-(http://o6n610sp1.bkt.clouddn.com/61ac6c8e-01d6-11e6-879f-8308883de790.png)    
-![screenshot of Moon]
-(http://o6n610sp1.bkt.clouddn.com/61ac6c8e-01d6-11e6-879f-8308883de790.png)
+- 列表
+-
+![列表](http://7xlgu7.com1.z0.glb.clouddn.com/pithy-list.jpg)
 
-主题版本 [live version of Moon](http://taylantatli.github.io/Moon) .
+- 文章
+-
+![文章](http://7xlgu7.com1.z0.glb.clouddn.com/pithy-post.jpg)
 
-## Getting Started
+反馈
+===
 
-来这里看看[Setup Guide](http://taylantatli.me/Moon/moon-theme/)可以学习如何搭建Moon主题的博客.
-或者直接联系我 :[My Email](lsl1107050213@hotmail.com).
+在你浏览或使用本主题时，发现问题或者是有好的建议，希望能够在这里给予反馈。
+
+[New Issue](https://github.com/guovz/pithy/issues/new)
+
+License
+===
+[MIT License](https://github.com/guovz/pithy/blob/gh-pages/LICENSE.md)

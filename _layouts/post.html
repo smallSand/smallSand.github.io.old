@@ -1,50 +1,44 @@
 ---
-layout: compress
+layout: default
 ---
-<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
-<head>
-    {% include head.html %}
-</head>
-<body>
-    {% include nav.html %}
-    <!-- Header -->
-    <header class="header" role="banner">
-        <div class="wrapper animated fadeIn">
-            <div class="content">
-                <div class="post-title {% if page.feature %} feature {% endif %}">
-                    <h1>{{ page.title }}</h1>
-                    <h4>{{ page.date | date_to_string }}</h4>
-                    {% if site.reading_time %}
-                    <p class="reading-time">
-                      <i class="fa fa-clock-o"></i>
-                      {% include read-time.html %}
-                    </p><!-- /.entry-reading-time -->
-                    {% endif %}
-                    {% if page.project %}
-                    <a class="btn zoombtn" href="{{site.url}}/projects/">
-                    {% else %}
-                    <a class="btn zoombtn" href="{{site.url}}/posts/">
-                    {% endif %}
-                        <i class="fa fa-chevron-left"></i>
-                    </a>
-                </div>
-                {{ content }}
-                <div class="entry-meta">
-                {% include meta.html %}
-                </div>
+<div class="container">
+    <div class="col-md-9 col-content">
+        <div id="post-content" class="panel panel-pithy post">
+            <div class="panel-heading">
+                <h3 class="title">
+                  <i class="fa fa-bookmark-o"></i>{{page.title}}
+                </h3>
+                <ul class="info">
+                    <li>
+                      {{ 'post.author' | translate }} <span class="author">{{ page.author }}</span>
+                    </li>
+                    <li>
+                      {{ 'post.update_date' | translate }} {{ page.date | date: "%Y年%m月%d日" }}
+                    </li>
+                    <li>
+                      {{ 'post.tags' | translate }}
+                     {% for tag in page.tags %}
+                         <a class="tag" href="{{site.baseurl}}/tag/#{{ tag }}">{{ tag }}</a>
+                     {% endfor %}
+                    </li>
+                </ul>
             </div>
+            <div class="panel-body content">
+                {{content}}
+            </div>
+            {% if site.duoshuo_share.enable%}
+              {% include share.html%}
+            {% endif %}
         </div>
-        {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->{% endif %}
-        {% if page.comments and site.uyan == true %}<div id="uyan_frame" class="animated fadeInUp" data-wow-duration="1.5s"></div>{% endif %}
-    </header>
-    {% include scripts.html %}
-    {% if site.mathjax == true %}
-    <!-- MathJax -->
-    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    {% endif %}
-</body>
-</html>
+        <!--
+            if config set comment enable,include comment
+        -->
+        {% if site.comment.enable %}
+            {% include comment.html%}
+        {% endif %}
+    </div>
+    <div class="col-md-3 col-sidebar">
+        {% include sidebar_categories.html%}
+        {% include sidebar_tags.html%}
+    </div>
+</div>
