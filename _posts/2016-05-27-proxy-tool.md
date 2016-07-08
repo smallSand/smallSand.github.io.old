@@ -3,7 +3,7 @@ layout: post
 title:  "翻墙工具介绍"
 date:   2016-05-27
 excerpt: "列举下我亲自测试成功的翻墙工具，没有详细介绍，自己领悟"
-categories:技术  翻墙 免费  工作
+categories:  技术  翻墙 免费  工作
 comments: true
 ---
 

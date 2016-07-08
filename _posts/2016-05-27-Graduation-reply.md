@@ -3,7 +3,7 @@ layout: post
 title:  "祝贺自己答辩顺利结束了"
 date:   2016-05-26
 excerpt: "我的第一篇博客"
-categories:随笔 记录 感悟 生活 工作
+categories: 随笔 记录 感悟 生活 工作
 comments: true
 ---
 
