@@ -9,7 +9,7 @@ comments: true
 
 # 字符串处理函数
 
-* 函数 ：character_length() *
+ 函数 ：character_length() 
 
 说明 ：返回字符串的长度
 
@@ -17,13 +17,11 @@ comments: true
  
  返回值为12
  
-* 函数 ：substring(Arg[varchar] from begin[int] for end[int]) * 
+函数 ：substring(Arg[varchar] from begin[int] for end[int])
 
 说明 ：截取字符串
 
-eg.  substring('中国人寿保险股份有限公司' from 0 for character_length('中国人寿保险股份有限公司')-1)   
-
-返回值为'中国人寿保险股份有限公' 去掉了最后一个字符串
+eg.  substring('中国人寿保险股份有限公司' from 0 for character_length('中国人寿保险股份有限公司')-1)   返回值为'中国人寿保险股份有限公' 去掉了最后一个字符串
 
 函数 ：'||'
 
