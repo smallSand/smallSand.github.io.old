@@ -24,7 +24,7 @@ comments: true
 
 ----------
 
-函数 ：字符串连接
+函数 ：`||`
 
 例子：  
 {% highlight SQL %}
@@ -171,7 +171,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：`decode(string text, type text) `
+函数：`decode(string text, type text) `   
 
 说明：Decode binary data from string previously encoded with encode. Parameter type is same as in encode. 对字符串按指定的类型进行解码
 
