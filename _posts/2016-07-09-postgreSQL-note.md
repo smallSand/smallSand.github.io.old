@@ -107,11 +107,17 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
+
+{% highlight SQL %}
+
 函数：<pre>trim([leading | trailing | both] [characters] from string) </pre>
 
 说明：Remove the longest string containing only the characters (a space by default) from the start/end/both ends of the string 去除尽可能长开始，结束或者两边的某类字符，默认为去除空白字符，当然可以自己指定，可同时指定多个要删除的字符串
 
 例子：select trim(leading 'p' from 'pmars'); = "mars"
+
+{% endhighlight %}
+
 
 ----------
 
