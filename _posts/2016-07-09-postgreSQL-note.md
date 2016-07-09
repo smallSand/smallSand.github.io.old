@@ -460,3 +460,30 @@ select pro_n_product()
 {% highlight SQL %}
 DROP FUNCTION pro_n_product();
 {% endhighlight %}
+
+
+另外一个例子
+`RAISE NOTICE` 可用于打印控制台消息
+{% highlight SQL %}
+CREATE FUNCTION somefunc() RETURNS integer AS $$
+DECLARE
+   quantity integer := 30;
+BEGIN
+   RAISE NOTICE 'Quantity here is %', quantity;  -- 在这里的数量是 30
+   quantity := 50;
+   --
+   -- 创建一个子块
+   --
+   DECLARE
+      quantity integer := 80;
+   BEGIN
+      RAISE NOTICE 'Quantity here is %', quantity;  -- 在这里的数量是 80
+   END;
+
+   RAISE NOTICE 'Quantity here is %', quantity;  -- 在这里的数量是 50
+
+   RETURN quantity;
+END;
+$$ LANGUAGE plpgsql;
+{% endhighlight %}
+
