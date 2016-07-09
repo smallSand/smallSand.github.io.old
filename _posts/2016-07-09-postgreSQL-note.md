@@ -421,7 +421,7 @@ CREATE TABLE tb_prod
 
 # 存储过程以及使用游标的例子 #
 
-```SQl
+{% highlight SQL %}
 CREATE or replace FUNCTION pro_n_product() RETURNS text  AS 
 $$
 DECLARE
@@ -445,7 +445,7 @@ BEGIN
     return result;
 END;
 $$ LANGUAGE plpgsql;
-```
+{% endhighlight %}
 
 如何调用
 
