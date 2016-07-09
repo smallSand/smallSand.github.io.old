@@ -7,7 +7,7 @@ categories:  postgreSQL 笔记  SQL
 comments: true
 ---
 
-# 字符串处理函数
+# 字符串处理函数 #
 
  函数 ：`character_length()`
 
@@ -382,7 +382,7 @@ world
 
 例子：translate('12345', '14', 'ax') = a23x5
 
-#  序列的基本使用
+# 序列的基本使用 #
 
 创建序列 ：
 
@@ -419,9 +419,9 @@ CREATE TABLE tb_prod
 )
 {% endhighlight %}
 
-# 存储过程以及使用游标的例子
+# 存储过程以及使用游标的例子 #
 
-{% highlight SQL %}
+```SQl
 CREATE or replace FUNCTION pro_n_product() RETURNS text  AS 
 $$
 DECLARE
@@ -445,7 +445,7 @@ BEGIN
     return result;
 END;
 $$ LANGUAGE plpgsql;
-{% endhighlight %}
+```
 
 如何调用
 
