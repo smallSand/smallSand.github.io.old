@@ -9,7 +9,7 @@ comments: true
 
 # 字符串处理函数
 
- 函数 ：character_length() 
+ 函数 ：`character_length()`
 
 说明 ：返回字符串的长度
 
@@ -35,7 +35,7 @@ select 'Value: ' || 42; = Value: 42
 
 {% endhighlight %}
 
-函数：bit_length(string)
+函数：`bit_length(string)`
 
 说明：Number of bits in string 计算字符串的位数
 
@@ -43,7 +43,7 @@ select 'Value: ' || 42; = Value: 42
 
  ----------
 
-函数：char_length(string) or character_length(string)
+函数：`char_length(string) or character_length(string)`
 
 说明：Number of characters in string 计算字符串中字符个数
 
@@ -51,7 +51,7 @@ select 'Value: ' || 42; = Value: 42
 
  ----------
 
-函数：lower(string)
+函数：`lower(string)`
 
 说明：Convert string to lower case 转换字符串为小写
 
@@ -59,7 +59,7 @@ select 'Value: ' || 42; = Value: 42
 
  ----------
 
-函数：octet_length(string)
+函数：`octet_length(string)`
 
 说明：Number of bytes in string 计算字符串的字节数
 
@@ -67,7 +67,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：overlay(string placing string from int [for int])
+函数：`overlay(string placing string from int [for int])`
 
 说明：Replace substring 替换字符串中任意长度的子字串为新字符串
 
@@ -75,7 +75,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：position(substring in string)
+函数：`position(substring in string)`
 
 说明：Location of specified substring 子串在一字符串中的位置
 
@@ -83,7 +83,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：substring(string [from int] [for int])
+函数：`substring(string [from int] [for int])`
 
 说明：Extract substring 截取任意长度的子字符串
 
@@ -91,7 +91,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：substring(string from pattern)
+函数：`substring(string from pattern)`
 
 说明：Extract substring matching POSIX regular expression. See Section 9.7 for more information on pattern matching. 利用正则表达式对一字符串进行任意长度的字串的截取
 
@@ -99,7 +99,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：substring(string from pattern for escape)
+函数：`substring(string from pattern for escape)`
 
 说明：Extract substring matching SQL regular expression. See Section 9.7 for more information on pattern matching. 利于正则表达式对某类字符进行删除，以得到子字符串
 
@@ -107,21 +107,15 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-
-{% highlight SQL %}
-
-函数：<pre>trim([leading | trailing | both] [characters] from string) </pre>
+函数：`trim([leading | trailing | both] [characters] from string)`
 
 说明：Remove the longest string containing only the characters (a space by default) from the start/end/both ends of the string 去除尽可能长开始，结束或者两边的某类字符，默认为去除空白字符，当然可以自己指定，可同时指定多个要删除的字符串
 
 例子：select trim(leading 'p' from 'pmars'); = "mars"
 
-{% endhighlight %}
-
-
 ----------
 
-函数：upper(string)
+函数：`upper(string)`
 
 说明：Convert string to uppercase 将字符串转换为大写
 
@@ -129,7 +123,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：ascii(string)
+函数：`ascii(string)`
 
 说明：ASCII code of the first character of the argument. For UTF8 returns the Unicode code point of the character. For other multibyte encodings. the argument must be a strictly ASCII character. 得到某一个字符的Assii值
 
@@ -137,7 +131,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：btrim(string text [, characters text])
+函数：`btrim(string text [, characters text])`
 
 说明：Remove the longest string consisting only of characters in characters (a space by default) from the start and end of string 去除字符串两边的所有指定的字符，可同时指定多个字符
 
@@ -145,7 +139,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：chr(int)
+函数：`chr(int)`
 
 说明：Character with the given code. For UTF8 the argument is treated as a Unicode code point. For other multibyte encodings the argument must designate a strictly ASCII character. The NULL (0) character is not allowed because text data types cannot store such bytes. 得到某ACSII值对应的字符
 
@@ -153,7 +147,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：convert(string bytea, src_encoding name, dest_encoding name) 
+函数：`convert(string bytea, src_encoding name, dest_encoding name) `
 
 说明：Convert string to dest_encoding. The original encoding is specified by src_encoding. The string must be valid in this encoding. Conversions can be defined by CREATE CONVERSION. Also there are some predefined conversions. See Table 9-7 for available conversions. 转换字符串编码，指定源编码与目标编码
 
@@ -161,7 +155,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：convert_from(string bytea, src_encoding name) 
+函数：`convert_from(string bytea, src_encoding name)` 
 
 说明：Convert string to the database encoding. The original encoding is specified by src_encoding. The string must be valid in this encoding. 转换字符串编码，自己要指定源编码,目标编码默认为数据库指定编码，
 
@@ -169,7 +163,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：convert_to(string text, dest_encoding name) 
+函数：`convert_to(string text, dest_encoding name) `
 
 说明：Convert string to dest_encoding.转换字符串编码，源编码默认为数据库指定编码，自己要指定目标编码,
 
@@ -177,7 +171,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：decode(string text, type text) 
+函数：`decode(string text, type text) `
 
 说明：Decode binary data from string previously encoded with encode. Parameter type is same as in encode. 对字符串按指定的类型进行解码
 
@@ -185,7 +179,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：encode(data bytea, type text) 
+函数：`encode(data bytea, type text) `
 
 说明：Encode binary data to different representation. Supported types are: base64, hex, escape. Escape merely outputs null bytes as \000 and doubles backslashes. 与decode相反，对字符串按指定类型进行编码
 
@@ -193,7 +187,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：initcap(string)
+函数：`initcap(string)`
 
 说明：Convert the first letter of each word to uppercase and the rest to lowercase. Words are sequences of alphanumeric characters separated by non-alphanumeric characters. 将字符串所有的单词进行格式化，首字母大写，其它为小写
 
@@ -201,7 +195,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：length(string)
+函数：`length(string)`
 
 说明：Number of characters in string 讲算字符串长度
 
@@ -209,7 +203,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：length(stringbytea, encoding name )
+函数：`length(stringbytea, encoding name )`
 
 说明：Number of characters in string in the given encoding. The string must be valid in this encoding. 计算字符串长度，指定字符串使用的编码
 
@@ -217,7 +211,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：lpad(string text, length int [, fill text]) 
+函数：`lpad(string text, length int [, fill text]) `
 
 说明：Fill up the string to length length by prepending the characters fill (a space by default). If the string is already longer than length then it is truncated (on the right). 对字符串左边进行某类字符自动填充，即不足某一长度，则在左边自动补上指定的字符串，直至达到指定长度，可同时指定多个自动填充的字符
 
@@ -225,7 +219,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：ltrim(string text [, characters text]) 
+函数：`ltrim(string text [, characters text]) `
 
 说明：Remove the longest string containing only characters from characters (a space by default) from the start of string 删除字符串左边某一些的字符，可以时指定多个要删除的字符
 
@@ -233,7 +227,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：md5(string)
+函数：`md5(string)`
 
 说明：Calculates the MD5 hash of string, returning the result in hexadecimal 将字符串进行md5编码
 
@@ -241,7 +235,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：pg_client_encoding()
+函数：`pg_client_encoding()`
 
 说明：Current client encoding name 得到pg客户端编码
 
@@ -249,7 +243,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：quote_ident(string text)
+函数：`quote_ident(string text)`
 
 说明：Return the given string suitably quoted to be used as an identifier in an SQL statement string. Quotes are added only if necessary (i.e., if the string contains non-identifier characters or would be case-folded). Embedded quotes are properly doubled. 对某一字符串加上两引号
 
@@ -258,7 +252,7 @@ select 'Value: ' || 42; = Value: 42
 ----------
 
 
-函数：quote_literal(string text)
+函数：`quote_literal(string text)`
 
 说明：Return the given string suitably quoted to be used as a string literal in an SQL statement string. Embedded single-quotes and backslashes are properly doubled. 对字符串里两边加上单引号，如果字符串里面出现sql编码的单个单引号，则会被表达成两个单引号
 
@@ -266,7 +260,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：quote_literal(value anyelement)
+函数：`quote_literal(value anyelement)`
 
 说明：Coerce the given value to text and then quote it as a literal. Embedded single-quotes and backslashes are properly doubled. 将一数值转换为字符串，并为其两边加上单引号，如果数值中间出现了单引号，也会被表示成两个单引号
 
@@ -274,7 +268,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：regexp_matches(string text, pattern text [, flags text])
+函数：`regexp_matches(string text, pattern text [, flags text])`
 
 说明：Return all captured substrings resulting from matching a POSIX regular expression against the string. See Section 9.7.3 for more information. 对字符串按正则表达式进行匹配，如果存在则会在结果数组中表示出来
 
@@ -282,7 +276,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：regexp_replace(string text, pattern text, replacement text [, flags text])
+函数：`regexp_replace(string text, pattern text, replacement text [, flags text])`
 
 说明：Replace substring(s) matching a POSIX regular expression. See Section 9.7.3 for more information. 利用正则表达式对字符串进行替换
 
@@ -290,7 +284,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：regexp_split_to_array(string text, pattern text [, flags text ])
+函数：`regexp_split_to_array(string text, pattern text [, flags text ])`
 
 说明：Split string using a POSIX regular expression as the delimiter. See Section 9.7.3 for more information. 利用正则表达式将字符串分割成数组
 
@@ -298,7 +292,7 @@ select 'Value: ' || 42; = Value: 42
 
 ----------
 
-函数：regexp_split_to_table(string text, pattern text [, flags text])
+函数：`regexp_split_to_table(string text, pattern text [, flags text])`
 
 说明：Split string using a POSIX regular expression as the delimiter. See Section 9.7.3 for more information. 利用正则表达式将字符串分割成表格
 
@@ -309,7 +303,7 @@ world
 
 ----------
 
-函数：repeat(string text, number int)
+函数：`repeat(string text, number int)`
 
 说明：Repeat string the specified number of times 重复字符串一指定次数
 
@@ -317,7 +311,7 @@ world
 
 ----------
 
-函数：replace(string text, from text, to text)
+函数：`replace(string text, from text, to text)`
 
 说明：Replace all occurrences in string of substring from with substring to 将字符的某一子串替换成另一子串
 
@@ -325,7 +319,7 @@ world
 
 ----------
 
-函数：rpad(string text, length int [, fill text]) 
+函数：`rpad(string text, length int [, fill text]) `
 
 说明：Fill up the string to length length by appending the characters fill (a space by default). If the string is already longer than length then it is truncated. 对字符串进行填充，填充内容为指定的字符串
 
@@ -333,7 +327,7 @@ world
 
 ----------
 
-函数：rtrim(string text [, characters text])
+函数：`rtrim(string text [, characters text])`
 
 说明：Remove the longest string containing only characters from characters (a space by default) from the end of string 
 去除字符串右边指定的字符
@@ -342,7 +336,7 @@ world
 
 ----------
 
-函数：split_part(string text, delimiter text, field int)
+函数：`split_part(string text, delimiter text, field int)`
 
 说明：Split string on delimiter and return the given field (counting from one)  对字符串按指定子串进行分割，并返回指定的数值位置的值
 
@@ -350,7 +344,7 @@ world
 
 ----------
 
-函数：strpos(string, substring)
+函数：`strpos(string, substring)`
 
 说明：Location of specified substring (same as position(substring in string), but note the reversed argument order) 指定字符串在目标字符串的位置
 
@@ -358,7 +352,7 @@ world
 
 ----------
 
-函数：substr(string, from [, count])
+函数：`substr(string, from [, count])`
 
 说明：Extract substring (same as substring(string from from for count)) 截取子串
 
@@ -366,7 +360,7 @@ world
 
 ----------
 
-函数：to_ascii(string text [, encoding text])
+函数：`to_ascii(string text [, encoding text])`
 
 说明：Convert string to ASCII from another encoding (only supports conversion from LATIN1, LATIN2, LATIN9, and WIN1250 encodings) 将字符串转换成ascii编码字符串
 
@@ -374,7 +368,7 @@ world
 
 ----------
 
-函数：to_hex(number int or bigint)
+函数：`to_hex(number int or bigint)`
 
 说明：Convert number to its equivalent hexadecimal representation 　对数值进行十六进制编码
 
@@ -382,7 +376,7 @@ world
 
 ----------
 
-函数：translate(string text, from text, to text) 
+函数：`translate(string text, from text, to text) `
 
 说明：Any character in string that matches a character in the from set is replaced by the corresponding character in the to set 将字符串中某些匹配的字符替换成指定字符串，目标字符与源字符都可以同时指定多个
 
