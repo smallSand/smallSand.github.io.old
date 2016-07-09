@@ -13,18 +13,20 @@ comments: true
 
 说明 ：返回字符串的长度
 
- eg.  select character_length('中国人寿保险股份有限公司')  返回值为12
+例子：  select character_length('中国人寿保险股份有限公司')  返回值为12
  
 函数 ：substring(Arg[varchar] from begin[int] for end[int])
 
 说明 ：截取字符串
 
-eg.  substring('中国人寿保险股份有限公司' from 0 for character_length('中国人寿保险股份有限公司')-1)   返回值为'中国人寿保险股份有限公' 去掉了最后一个字符串
+例子： substring('中国人寿保险股份有限公司' from 0 for character_length('中国人寿保险股份有限公司')-1)   返回值为'中国人寿保险股份有限公' 去掉了最后一个字符串
 
+
+----------
 
 函数 ：字符串连接
 
- eg.  
+例子：  
 {% highlight SQL %}
 
 '我'||'喜欢'||'你'='我喜欢你'
@@ -39,7 +41,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select bit_length('pmars') = 40
 
- 
+ ----------
 
 函数：char_length(string) or character_length(string)
 
@@ -47,7 +49,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select char_length('pmars'); = 5
 
- 
+ ----------
 
 函数：lower(string)
 
@@ -55,7 +57,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select lower('PmArS'); = "pmars"
 
- 
+ ----------
 
 函数：octet_length(string)
 
@@ -63,6 +65,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select octet_length('我是pmars'); = 11  select octet_length('我');  = 3
 
+----------
 
 函数：overlay(string placing string from int [for int])
 
@@ -70,6 +73,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select overlay('I am pmars' placing 'ming' from 6 for 5); = "I am ming"
 
+----------
 
 函数：position(substring in string)
 
@@ -77,6 +81,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select position('ma' in 'pmars'); = 2
 
+----------
 
 函数：substring(string [from int] [for int])
 
@@ -84,6 +89,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select substring('topmars' from 3 for 3); = "pma"
 
+----------
 
 函数：substring(string from pattern)
 
@@ -91,6 +97,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select substring('topmars' from 'p.*$'); = "pmars"
 
+----------
 
 函数：substring(string from pattern for escape)
 
@@ -98,13 +105,15 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select substring('Thomas' from '%#"o_a#"_' for '#'); = "oma"
 
+----------
 
-函数：trim([leading | trailing | both] [characters] from string) 
+函数：<pre>trim([leading | trailing | both] [characters] from string) </pre>
 
 说明：Remove the longest string containing only the characters (a space by default) from the start/end/both ends of the string 去除尽可能长开始，结束或者两边的某类字符，默认为去除空白字符，当然可以自己指定，可同时指定多个要删除的字符串
 
 例子：select trim(leading 'p' from 'pmars'); = "mars"
 
+----------
 
 函数：upper(string)
 
@@ -112,6 +121,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select upper('pmars'); = "PMARS"
 
+----------
 
 函数：ascii(string)
 
@@ -119,6 +129,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select ascii('pmars'); = select ascii('p'); = 112
 
+----------
 
 函数：btrim(string text [, characters text])
 
@@ -126,6 +137,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select btrim('pmars','prs'); = "ma"
 
+----------
 
 函数：chr(int)
 
@@ -133,6 +145,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select chr(65); = A
 
+----------
 
 函数：convert(string bytea, src_encoding name, dest_encoding name) 
 
@@ -140,6 +153,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select convert('我是pmars_in_utf8', 'UTF8', 'GBK'); = "\316\322\312\307pmars_in_utf8"
 
+----------
 
 函数：convert_from(string bytea, src_encoding name) 
 
@@ -147,6 +161,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select convert_from('\316\322\312\307pmars','GBK'); = "我是pmars"
 
+----------
 
 函数：convert_to(string text, dest_encoding name) 
 
@@ -154,6 +169,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select convert_to('我是pmars_in_utf8','GBK'); = "\316\322\312\307pmars_in_utf8"
 
+----------
 
 函数：decode(string text, type text) 
 
@@ -161,6 +177,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select decode('MTIzAAE=', 'base64'); = "123\000\001"
 
+----------
 
 函数：encode(data bytea, type text) 
 
@@ -168,6 +185,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select encode('123\000\001','base64'); = "MTIzAAE="
 
+----------
 
 函数：initcap(string)
 
@@ -175,6 +193,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select initcap('I AM PMARs'); = "I Am Pmars"
 
+----------
 
 函数：length(string)
 
@@ -182,6 +201,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select length('我是pmars'); = 7
 
+----------
 
 函数：length(stringbytea, encoding name )
 
@@ -189,6 +209,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select length('我是pmars','GBK'); = 8
 
+----------
 
 函数：lpad(string text, length int [, fill text]) 
 
@@ -196,6 +217,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select lpad('pmars', 10, 'to'); = "tototpmars"
 
+----------
 
 函数：ltrim(string text [, characters text]) 
 
@@ -203,6 +225,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select ltrim('pmars','amp'); = "rs"
 
+----------
 
 函数：md5(string)
 
@@ -210,6 +233,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select md5('pmars'); = "1018ceb949f1472f7252f7da1f5eff42"
 
+----------
 
 函数：pg_client_encoding()
 
@@ -217,6 +241,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：select pg_client_encoding(); = "UTF8"
 
+----------
 
 函数：quote_ident(string text)
 
@@ -224,6 +249,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：quote_ident('Foo bar') = "Foo bar"
 
+----------
 
 
 函数：quote_literal(string text)
@@ -232,6 +258,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：quote_literal('O\'Reilly') = 'O''Reilly'
 
+----------
 
 函数：quote_literal(value anyelement)
 
@@ -239,6 +266,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：quote_literal(42.5) = '42.5'
 
+----------
 
 函数：regexp_matches(string text, pattern text [, flags text])
 
@@ -246,6 +274,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：regexp_matches('foobarbequebaz', '(bar)(beque)') = {bar,beque}
 
+----------
 
 函数：regexp_replace(string text, pattern text, replacement text [, flags text])
 
@@ -253,6 +282,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：regexp_replace('Thomas', '.[mN]a.', 'M') = ThM
 
+----------
 
 函数：regexp_split_to_array(string text, pattern text [, flags text ])
 
@@ -260,6 +290,7 @@ select 'Value: ' || 42; = Value: 42
 
 例子：regexp_split_to_array('hello world', E'\\s+') = {hello,world}
 
+----------
 
 函数：regexp_split_to_table(string text, pattern text [, flags text])
 
@@ -270,6 +301,7 @@ hello
 world
 (2 rows)
 
+----------
 
 函数：repeat(string text, number int)
 
@@ -277,6 +309,7 @@ world
 
 例子：repeat('Pg', 4) = PgPgPgPg
 
+----------
 
 函数：replace(string text, from text, to text)
 
@@ -284,6 +317,7 @@ world
 
 例子：('abcdefabcdef', 'cd', 'XX') = abXXefabXXef
 
+----------
 
 函数：rpad(string text, length int [, fill text]) 
 
@@ -291,6 +325,7 @@ world
 
 例子：rpad('hi', 5, 'xy') = hixyx
 
+----------
 
 函数：rtrim(string text [, characters text])
 
@@ -299,6 +334,7 @@ world
 
 例子：rtrim('trimxxxx', 'x') = trim
 
+----------
 
 函数：split_part(string text, delimiter text, field int)
 
@@ -306,6 +342,7 @@ world
 
 例子：split_part('abc~@~def~@~ghi', '~@~', 2) = def
 
+----------
 
 函数：strpos(string, substring)
 
@@ -313,6 +350,7 @@ world
 
 例子：strpos('high', 'ig') = 2
 
+----------
 
 函数：substr(string, from [, count])
 
@@ -320,6 +358,7 @@ world
 
 例子：substr('alphabet', 3, 2) = ph
 
+----------
 
 函数：to_ascii(string text [, encoding text])
 
@@ -327,6 +366,7 @@ world
 
 例子：to_ascii('Karel') = Karel
 
+----------
 
 函数：to_hex(number int or bigint)
 
@@ -334,6 +374,7 @@ world
 
 例子：to_hex(2147483647) = 7fffffff
 
+----------
 
 函数：translate(string text, from text, to text) 
 
@@ -397,7 +438,8 @@ BEGIN
 	
 	update tb_prod set recordtime=_recorddate where issale='在售' and company=p.company and prodname=p.prodname;
 
-   end loop;
+   	end loop;
+
     result='OK';
 
     return result;
