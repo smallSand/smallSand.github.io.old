@@ -7,21 +7,25 @@ categories:  postgreSQL 笔记  SQL
 comments: true
 ---
 
-#postgreSQL字符串处理函数
+# postgreSQL字符串处理函数
 
-character_length() 返回字符串的长度
+*函数 ：character_length()*
+说明 ：返回字符串的长度
+ eg.  select character_length('中国人寿保险股份有限公司')  
+ 返回值为12
+ 
+*函数 ：substring(Arg[varchar] from begin[int] for end[int])* 
+说明 ：截取字符串
+eg.  substring('中国人寿保险股份有限公司' from 0 for character_length('中国人寿保险股份有限公司')-1)   
+返回值为'中国人寿保险股份有限公' 去掉了最后一个字符串
 
- eg.  select character_length('中国人寿保险股份有限公司')  返回值为12
-
-substring(Arg[varchar] from begin[int] for end[int])   截取字符串
-
-eg.  substring('中国人寿保险股份有限公司' from 0 for character_length('中国人寿保险股份有限公司')-1)    返回值为'中国人寿保险股份有限公' 去掉了最后一个字符串
-
-|| 字符串连接
-
-eg.  '我'||'喜欢'||'你'   得到的结果为'我喜欢你的'
-
-#postgreSQL 序列
+函数 ：'||'
+说明 ：字符串连接
+eg.  
+{% highlight SQL %}
+'我'||'喜欢'||'你'='我喜欢你'
+{% endhighlight %}
+# postgreSQL 序列
 
 创建序列 ：
 
@@ -42,7 +46,6 @@ create sequence seq_tb_prod_id;
 CREATE TABLE tb_prod
 (
   id integer DEFAULT nextval('seq_tb_prod_id'::regclass),
-  no character varying(100),
   company character varying(100),
   prodname character varying(100),
   recordtime character varying(100),
@@ -59,7 +62,7 @@ CREATE TABLE tb_prod
 )
 {% endhighlight %}
 
-#postgreSQL存储过程以及使用游标的例子
+# postgreSQL存储过程以及使用游标的例子
 
 {% highlight SQL %}
 CREATE or replace FUNCTION pro_n_product() RETURNS text  AS 
