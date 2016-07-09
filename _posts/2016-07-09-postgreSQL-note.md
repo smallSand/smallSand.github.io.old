@@ -13,9 +13,7 @@ comments: true
 
 说明 ：返回字符串的长度
 
- eg.  select character_length('中国人寿保险股份有限公司')  
- 
- 返回值为12
+ eg.  select character_length('中国人寿保险股份有限公司')  返回值为12
  
 函数 ：substring(Arg[varchar] from begin[int] for end[int])
 
@@ -23,7 +21,7 @@ comments: true
 
 eg.  substring('中国人寿保险股份有限公司' from 0 for character_length('中国人寿保险股份有限公司')-1)   返回值为'中国人寿保险股份有限公' 去掉了最后一个字符串
 
-函数 ：'||'
+函数 ：字符串连接
 
 说明 ：字符串连接
 
@@ -31,7 +29,7 @@ eg.
 {% highlight SQL %}
 '我'||'喜欢'||'你'='我喜欢你'
 {% endhighlight %}
-#  序列
+#  序列的基本使用
 
 创建序列 ：
 
