@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "postgreSQL 笔记"
+title:  "java 下载网络文件的例子"
 date:   2016-07-09
-excerpt: "最近一直在使用postgreSQL处理数据,记录下常用的操作,方便以后查询"
-categories:  postgreSQL 笔记  SQL
+excerpt: "最近在网上爬取保险产品的数据，获得到了大量条款的URL连接,编写以下方法将文件下载到本地"
+categories:  Java I/O流  下载
 comments: true
 ---
 
@@ -13,16 +13,16 @@ comments: true
 
 {% highlight Java %}
 	
-	  public static  byte[] readInputStream(InputStream inputStream) throws IOException {    
-	       byte[] buffer = new byte[1024];    
-	       int len = 0;    
-	        ByteArrayOutputStream bos = new ByteArrayOutputStream();    
-	        while((len = inputStream.read(buffer)) != -1) {    
-	            bos.write(buffer, 0, len);    
-	        }    
-	      bos.close();    
-	      return bos.toByteArray();    
-	  }  
+public static  byte[] readInputStream(InputStream inputStream) throws IOException {    
+    byte[] buffer = new byte[1024];    
+    int len = 0;    
+	ByteArrayOutputStream bos = new ByteArrayOutputStream();    
+	while((len = inputStream.read(buffer)) != -1) {    
+	     bos.write(buffer, 0, len);    
+	 }    
+	bos.close();    
+    return bos.toByteArray();    
+}  
 	  
 {% endhighlight %}
 
