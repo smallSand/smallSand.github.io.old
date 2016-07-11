@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Java实现通过网络URL下载文件到本地"
+title:  "java实现通过网络URL下载文件到本地"
 date:   2016-07-11
-excerpt: "最近通过爬虫拿到了保险条款文件的URL地址，需要将文件下载到本地，这个方法可以派上用场"
-categories:  Java 下载文件  I/O流
-comments ： true
+excerpt: "最近通过爬虫拿到了保险条款文件的URL地址,需要将文件下载到本地,这个方法可以派上用场"
+categories:   Java  下载文件   I/O流
+comments ：  true
 ---
 
 ## 编写辅助方法
