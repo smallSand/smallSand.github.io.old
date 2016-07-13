@@ -21,6 +21,6 @@ comments: true
 
  ```path.mkdirs();```
  
- 在E盘没有任务目录的情况下，调用下面方法会生成
+ 在E盘没有任何目录的情况下，调用下面方法会生成
  
  ![](http://smallsand.github.io/image/20160713195027.png)
