@@ -10,7 +10,7 @@ comments: true
 # 技术类
 
 - 美团网技术博客
- [http://tech.meituan.com/](http://tech.meituan.com)
+ [http://tech.meituan.com/](http://tech.meituan.com){:target="_blank"}
  
  - 百度技术团队
- [http://efe.baidu.com/](http://efe.baidu.com/)
+ [http://efe.baidu.com/](http://efe.baidu.com/){:target="_blank"}
