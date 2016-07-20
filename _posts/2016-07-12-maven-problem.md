@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Maven 错误处理记录"
-date:   2016-07-14
-excerpt: "今天使用java File 对象新建目录的时候时遇到的一些问题，记录一下"
+title:  "Maven错误处理记录"
+date:   2016-07-12
+excerpt: "Maven报错处理"
 categories:  Maven 笔记
 comments: true
 ---
