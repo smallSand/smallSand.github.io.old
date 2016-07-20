@@ -7,11 +7,11 @@ categories:  java 笔记
 comments: true
 ---
 
-使用javah创建目录有mkdir()和mkdirs()两种方法,区分下两种方法的区别
+使用java创建目录有`mkdir()`和`mkdirs()`两种方法,区分下两种方法的区别
 
 # 使用mkdir()创建目录
 
-使用mkdir()创建目录一次只能创建一级目录,无法创建多级目录
+使用`mkdir()`创建目录一次只能创建一级目录,无法创建多级目录
 
 # 使用mkdirs()创建目录
 
