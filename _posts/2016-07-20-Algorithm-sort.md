@@ -1,9 +1,9 @@
 ---
-layout: post
+layout:  post
 title:  "排序算法"
-date:   2016-07-20
+date:    2016-07-20
 excerpt: "记录排序算法和对应的java实现"
-categories:  算法  笔记
+categories:  算法 笔记
 comments: true
 ---
 

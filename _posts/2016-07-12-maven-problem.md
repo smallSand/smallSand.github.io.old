@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Maven错误处理记录"
+title:  "maven错误处理记录"
 date:   2016-07-12
-excerpt: "Maven报错处理"
-categories:  Maven 笔记
+excerpt: "maven报错处理"
+categories:  maven 笔记
 comments: true
 ---
 
