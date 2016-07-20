@@ -17,7 +17,9 @@ The container 'Maven Dependencies' references non existing library '${groupid}/$
 
 上面问题往往是在下载依赖过程中网络出现问题导致下载中断或者人为中断下载.
 
-此时我们本机已经开始下载依赖代码,但是下载失败,本机仓库中会在${MAVEN_repo}/${groupid}/${artifactid}/${version} 路径下面生成 *.lastUpdated 的文件.
+此时我们本机已经开始下载依赖代码,但是下载失败,本机仓库中会在
+
+${MAVEN_repo}/${groupid}/${artifactid}/${version} 路径下面生成 *.lastUpdated 的文件.
 
 *.lastUpdated实在可恶,下次再下载时由于它的存在Maven不会再去私服中下载
 
