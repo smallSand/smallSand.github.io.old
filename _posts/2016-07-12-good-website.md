@@ -17,3 +17,7 @@ comments: true
  
  - 可视化算法
  [http://visualgo.net](http://visualgo.net){:target="_blank"}
+
+ - 开发与研发的区别
+ 
+ [http://blog.csdn.net/geoffreyqh/article/details/6129243](http://blog.csdn.net/geoffreyqh/article/details/6129243){:target="_blank"}

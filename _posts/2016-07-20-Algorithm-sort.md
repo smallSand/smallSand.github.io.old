@@ -52,3 +52,52 @@ public class BubbleSort
     }
 }
 {% endhighlight %}
+
+# 选择排序(Selection sort)
+
+## 基本思想
+
+选择类排序（包括简单选择排序、树形选择排序和堆排序等）的基本算法思想是执行第i趟操作时，从第i条记录后选择一条最小的记录和第i条记录交换。
+
+初始状态： 49 38 65 97 76 13 27
+
+第一趟： 从（38 65 97 76 13 27）中选择最小值13与49交换
+
+13 38 65 97 76 49 27
+
+第二趟： 从（65 97 76 49 27）中选择最小值27与38交换
+
+13 27 65 97 76 49 38
+
+...
+
+## java实现
+
+{% highlight java %}
+public static void selectSort(int[]a)
+{
+    int minIndex=0;
+    int temp=0;
+    if((a==null)||(a.length==0))
+        return;
+    for(int i=0;i<a.length-1;i++)
+    {
+        minIndex=i;//无序区的最小数据数组下标
+        for(intj=i+1;j<a.length;j++)
+        {
+            //在无序区中找到最小数据并保存其数组下标
+            if(a[j]<a[minIndex])
+            {
+                minIndex=j;
+            }
+        }
+        if(minIndex!=i)
+        {
+            //如果不是无序区的最小值位置不是默认的第一个数据，则交换之。
+            temp=a[i];
+            a[i]=a[minIndex];
+            a[minIndex]=temp;
+        }
+    }
+}
+{% endhighlight %}
