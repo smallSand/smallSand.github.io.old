@@ -34,7 +34,7 @@ public: true
 
 - Java 语言扎实，熟悉 IO、多线程、集合、网络编程等，了解 JVM 原理；
 
-- 一年及以上 Java SE/EE 开发的经验，接触过 Spring/Hibernate/MyBatis/Struts/Jfinal等开源框架，接触过 HTML/JS/Bootstrap/CSS/AngularJS/JQuery/avalon/fis等客户端技术的开发，有一定快速解决技术问题的能力,接触过Mysql/postgre/Oracle等数据库，具备编写PL/SQl、pg/sql等过程语言的能力；
+- 一年及以上 Java SE/EE 开发的经验，接触过 Spring/Hibernate/MyBatis/Struts/Jfinal等开源框架，使用过过 HTML/JS/Bootstrap/CSS/AngularJS/JQuery/avalon/fis等客户端技术完成开发，有一定快速解决技术问题的能力,使用过Mysql/postgre/Oracle等数据库，具备编写PL/SQl、pg/sql等过程语言的能力；
 
 - 喜欢了解及尝试最新的技术，追求代码规范，爱好开源，乐于技术分享，对企业忠诚；
 
@@ -71,7 +71,7 @@ public: true
 
   - 项目职责： 负责该项目的设计、编码
 
-  - 项目描述: 系统基于MVC的设计模式，采用开源框架开发
+  - 项目描述: 系统基于MVC的设计模式，采用开源框架开发,获得学校的优秀毕业设计奖项
  
 - JavaLover公众号(2015/01  --  2015/06)
 
