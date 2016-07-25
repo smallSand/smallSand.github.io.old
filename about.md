@@ -87,4 +87,4 @@ public: true
   
   -------
   
- 下载简历(http://smallsand.github.com/image/about.pdf)
+ [下载简历](http://smallsand.github.com/image/about.pdf)
