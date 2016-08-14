@@ -24,19 +24,21 @@ Stack Overflow是一个庞大的编程知识仓库,在Stack Overflow 上，数�
 
 1.遍历一个HashMap
 
-
 被接受的回答：
 
 {% highlight java %}
+
     Map<String, Object> map = ...; 
     for (String key : map.keySet()) { 
      // ... 
     }
+    
 {% endhighlight java %}
 
 如果我们在jExample搜索“HashMap”，前往java.util.HashMap示例页面。然后点击其中一个最常用的方法-entrySet()，我们就能快速的如下的示例：
 
 {% highlight java %}
+
 	HashMap<BigInteger,R> subMap = rowie.getValue();
 	for( Entry<BigInteger, R> colie : subMap.entrySet() )
 	{
@@ -44,6 +46,7 @@ Stack Overflow是一个庞大的编程知识仓库,在Stack Overflow 上，数�
 		R vali = colie.getValue();
 		ret.setVal(row, col, mutr.mutate( vali ) );
 	}
+	
 {% endhighlight java %}
 
 这个例子展示了如何通过使用`HashMap.entrySet(),Entry.getKey()`和`Entry.getValue()`去迭代循环去遍历一个HashMap
@@ -56,12 +59,14 @@ Links: [HashMap.entrySet()](http://www.programcreek.com/java-api-examples/index.
 对于这个问题，有多个回答提供了很多方式。这里是一些排名前三的方法：
 
 {% highlight java %}
+
     // Method 1
     new ArrayList<Element>(Arrays.asList(array))
     // Method 2
     ImmutableList.of("string", "elements");
     // Method 3
     List<String> l1 = Lists.newArrayList(anotherListOrCollection);
+    
 {% endhighlight java %}
 
 以上的三个方法可以通过`jExample1找到
@@ -69,22 +74,28 @@ Links: [HashMap.entrySet()](http://www.programcreek.com/java-api-examples/index.
 Method 1:
 
 {% highlight java %}
+
     List<String> updatedLikedAddresses = new ArrayList<>(Arrays.asLi(likedAddresses));
+    
 {% endhighlight java %}
 
 Method 2:
 
 {% highlight java %}
+
     List<String> portions = ImmutableList.of(serviceName,version,callStyle.name())
+    
 {% endhighlight java %}
 
 Method 3:
 
 {% highlight java %}
+
     List<Object> result = Lists.newArrayList();
 	for(Class<?> aClass : classes){
 		result.add(new Object[] {aclass})
 	}
+	
 {% endhighlight java %}
 
 3.如何在一个范围内生成碎随机数？
@@ -92,7 +103,9 @@ Method 3:
 被接受的来自回答的解决方法：
 
 {% highlight java %}
+
     int randomNum = rand.nextInt((max - min) + 1) + min;
+    
 {% endhighlight java %}
 
 4.如何将一个字符串转换成整型
@@ -100,7 +113,9 @@ Method 3:
 最好的答案
 
 {% highlight java %}
+
     int foo = Integer.parseInt("1234");
+    
 {% endhighlight java %}
 
 5.如何将字节流转换成字节数组
@@ -108,8 +123,10 @@ Method 3:
 被采纳的回答
 
 {% highlight java %}
+
     InputStream is; 
     byte[] bytes = IOUtils.toByteArray(is);
+    
 {% endhighlight java %}
 
 6.如何生成一个`MD5`散列
@@ -117,6 +134,7 @@ Method 3:
 可以使用`MessageDigest`
 
 {% highlight java %}
+
     public static String getMD5Digest(String str) {
 	try {
 		byte[] buffer = str.getBytes();
@@ -146,6 +164,7 @@ Method 3:
 	}
 	return null;
     }
+    
 {% endhighlight java %}
 
 7.在java中如何创建一个文件并向文件中写入内容
@@ -153,23 +172,28 @@ Method 3:
 创建一个文本文件 - 方法 1
 
 {% highlight java %}
+
     PrintWriter writer = new PrintWriter("the-file-name.txt", "UTF-8");       
     writer.println("The first line"); 
     writer.println("The second line"); 
     writer.close();
+    
 {% highlight java %}
 
 创建一end个文本文件 - 方法 2
 
 {% highlight java %}
+
     List<String> lines = Arrays.asList("The first line", "The second line"); 
     Path file = Paths.get("the-file-name.txt"); 
     Files.write(file, lines, Charset.forName("UTF-8"));
+    
 {% endhighlight java %}
 
 8.在java中从文本文件读取内容的最好方法
 
 {% highlight java %}
+
     BufferedReader br = new BufferedReader(new FileReader("file.txt")); 
     try {
        StringBuilder sb = new StringBuilder();
@@ -183,6 +207,7 @@ Method 3:
     } finally { 
        br.close(); 
     }
+    
 {% endhighlight java %}
 
 9.如何将java.util.Date转换成XMLGregorianCalendar
@@ -190,9 +215,11 @@ Method 3:
 被接受的回答：
 
 {% highlight java %}
+
     GregorianCalendar c = new GregorianCalendar(); 
     c.setTime(yourDate); 
     XMLGregorianCalendar date2 = DatatypeFactory.newInstance().newXMLGregorianCalendar(c);
+    
 {% endhighlight java %}
 
 10.如何检查一个字符串是否为数值型的字符串
@@ -200,5 +227,7 @@ Method 3:
 被接受的回答是使用`Apache Commons Lang`包中的 `StringUtils.isNumeric`
 
 {% highlight java %}
+
     StringUtils.isNumeric("23432")
+    
 {% endhighlight java %}
