@@ -169,7 +169,7 @@ Method 3:
 
 7.在java中如何创建一个文件并向文件中写入内容
 
-创建一个文本文件 - 方法 1
+方法 1
 
 {% highlight java %}
 
@@ -180,7 +180,7 @@ Method 3:
     
 {% highlight java %}
 
-创建一end个文本文件 - 方法 2
+方法 2
 
 {% highlight java %}
 
