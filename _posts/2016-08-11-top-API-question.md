@@ -171,19 +171,21 @@ Method 3:
 
 方法一
 
+{% highlight java %}
     PrintWriter writer = new PrintWriter("the-file-name.txt", "UTF-8");       
     writer.println("The first line"); 
     writer.println("The second line"); 
     writer.close();
+{% endhighlight java %}
     
-
 方法 2
 
-
+{% highlight java %}
     List<String> lines = Arrays.asList("The first line", "The second line"); 
     Path file = Paths.get("the-file-name.txt"); 
     Files.write(file, lines, Charset.forName("UTF-8"));
-    
+{% endhighlight java %} 
+ 
 8.在java中从文本文件读取内容的最好方法
 
 {% highlight java %}
