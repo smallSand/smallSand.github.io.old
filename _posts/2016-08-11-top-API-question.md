@@ -22,7 +22,7 @@ Stack Overflow是一个庞大的编程知识仓库,在Stack Overflow 上，数�
 对于每一个问题，最好的回答首先会被展示，随后通过Java API examples(jExample)的解决方案也会图文并茂的展示。
 
 
-1. Iterate through a HashMap （遍历一个HashMap）
+1.遍历一个HashMap
 
 
 被接受的回答：
@@ -47,5 +47,133 @@ Stack Overflow是一个庞大的编程知识仓库,在Stack Overflow 上，数�
 Links: [HashMap.entrySet()](http://www.programcreek.com/java-api-examples/index.php?class=java.util.HashMap&method=entrySet)
 
 
-2.Create ArrayList from array(通过一个数组创建一个ArrayList)
+2.通过一个数组创建一个`ArrayList`
+
+对于这个问题，有多个回答提供了很多方式。这里是一些排名前三的方法：
+
+    // Method 1
+    new ArrayList<Element>(Arrays.asList(array))
+    // Method 2
+    ImmutableList.of("string", "elements");
+    // Method 3
+    List<String> l1 = Lists.newArrayList(anotherListOrCollection);
+
+以上的三个方法可以通过`jExample1找到
+
+Method 1:
+
+    List<String> updatedLikedAddresses = new ArrayList<>(Arrays.asLi(likedAddresses));
+
+Method 2:
+
+    List<String> portions = ImmutableList.of(serviceName,version,callStyle.name())
+
+
+Method 3:
+
+    List<Object> result = Lists.newArrayList();
+	for(Class<?> aClass : classes){
+		result.add(new Object[] {aclass})
+	}
+
+
+3.如何在一个范围内生成碎随机数？
+
+被接受的来自回答的解决方法：
+
+    int randomNum = rand.nextInt((max - min) + 1) + min;
+
+4.如何将一个字符串转换成整型
+
+最好的答案
+
+    int foo = Integer.parseInt("1234");
+
+5.如何将字节流转换成字节数组
+
+被采纳的回答
+
+    InputStream is; 
+    byte[] bytes = IOUtils.toByteArray(is);
+
+6.如何生成一个`MD5`散列
+
+可以使用`MessageDigest`
+
+    public static String getMD5Digest(String str) {
+	try {
+		byte[] buffer = str.getBytes();
+		byte[] result = null;
+		StringBuffer buf = null;
+		MessageDigest md5 = MessageDigest.getInstance("MD5");
+		// allocate room for the hash
+		result = new byte[md5.getDigestLength()];
+		// calculate hash
+		md5.reset();
+		md5.update(buffer);
+		
+		result = md5.digest();
+		// System.out.println(result);
+		// create hex string from the 16-byte hash
+		buf = new StringBuffer(result.length * 2);
+		for (int i = 0; i < result.length; i++) {
+			int intVal = result[i] & 0xff;
+			if (intVal < 0x10) {
+				buf.append("0");
+			}
+			buf.append(Integer.toHexString(intVal).toUpperCase());
+		}
+		return buf.toString();
+	} catch (NoSuchAlgorithmException e) {
+		System.err.println("Exception caught: " + e);
+		e.printStackTrace();
+		
+	}
+	return null;
+    }
+
+7.在java中如何创建一个文件并向文件中写入内容
+
+创建一个文本文件 - 方法 1
+
+    PrintWriter writer = new PrintWriter("the-file-name.txt", "UTF-8");       
+    writer.println("The first line"); 
+    writer.println("The second line"); 
+    writer.close();
+
+创建一个文本文件 - 方法 2
+
+    List<String> lines = Arrays.asList("The first line", "The second line"); 
+    Path file = Paths.get("the-file-name.txt"); 
+    Files.write(file, lines, Charset.forName("UTF-8"));
+
+8.在java中从文本文件读取内容的最好方法
+
+    BufferedReader br = new BufferedReader(new FileReader("file.txt")); 
+    try {
+       StringBuilder sb = new StringBuilder();
+       String line = br.readLine();
+       while (line != null) {
+      sb.append(line);
+      sb.append(System.lineSeparator());
+      line = br.readLine(); 
+       } 
+       String everything = sb.toString(); 
+    } finally { 
+       br.close(); 
+    }
+
+9.如何将java.util.Date转换成XMLGregorianCalendar
+
+被接受的回答：
+
+    GregorianCalendar c = new GregorianCalendar(); 
+    c.setTime(yourDate); 
+    XMLGregorianCalendar date2 = DatatypeFactory.newInstance().newXMLGregorianCalendar(c);
+
+10.如何检查一个字符串是否为数值型的字符串
+
+被接受的回答是使用`Apache Commons Lang`包中的 `StringUtils.isNumeric`
+
+    StringUtils.isNumeric("23432")
 
