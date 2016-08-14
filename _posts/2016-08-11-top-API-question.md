@@ -169,27 +169,21 @@ Method 3:
 
 7.在java中如何创建一个文件并向文件中写入内容
 
-方法 1
-
-{% highlight java %}
+方法一
 
     PrintWriter writer = new PrintWriter("the-file-name.txt", "UTF-8");       
     writer.println("The first line"); 
     writer.println("The second line"); 
     writer.close();
     
-{% highlight java %}
 
 方法 2
 
-{% highlight java %}
 
     List<String> lines = Arrays.asList("The first line", "The second line"); 
     Path file = Paths.get("the-file-name.txt"); 
     Files.write(file, lines, Charset.forName("UTF-8"));
     
-{% endhighlight java %}
-
 8.在java中从文本文件读取内容的最好方法
 
 {% highlight java %}
