@@ -11,7 +11,7 @@ comments: true
 
 # 引入jar包 #
 
-我使用了第三方jxl.jar来处理Excel文档,所以首先需要将jxl.jar引入到项目中，[下载地址](http://smallsand.github.io/jxl.jar)
+我使用了第三方jxl.jar来处理Excel文档,所以首先需要将jxl.jar引入到项目中，[下载地址](http://smallsand.github.io/file/jxl.jar)
 
 # 上传待处理的Excel，得到文件路径 #
 
