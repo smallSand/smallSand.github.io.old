@@ -19,14 +19,13 @@ comments: true
  [http://visualgo.net](http://visualgo.net){:target="_blank"}
 
  - 开发与研发的区别
- 
  [http://blog.csdn.net/geoffreyqh/article/details/6129243](http://blog.csdn.net/geoffreyqh/article/details/6129243){:target="_blank"}
  
  # 阿里云镜像仓库
  
-	 	<mirror>
-	        <id>nexus-aliyun</id>
-	        <mirrorOf>*</mirrorOf>
-	        <name>Nexus aliyun</name>
-	        <url>http://maven.aliyun.com/nexus/content/groups/public</url>
-	    </mirror>
+    <mirror>
+     <id>nexus-aliyun</id>
+     <mirrorOf>*</mirrorOf>
+     <name>Nexus aliyun</name>
+     <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+    </mirror>
